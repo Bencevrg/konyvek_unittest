@@ -1,0 +1,7 @@
+{
+  "name": "Books API",
+  "version": "1.0.0",
+  "description": "Books API basic documentation",
+  "title": "Books API",
+  "url" : "http://localhost:8000/api"
+}

@@ -1,0 +1,18 @@
+Könyvek Laravel projekt adatbázis:
+Konyv:
+- id
+- cím
+- író_id
+- borító
+- IBAN szám
+- ár
+- leírás
+- műfaj
+
+Irok:
+- id
+- név
+- kép
+- bio
+
+angolul!
