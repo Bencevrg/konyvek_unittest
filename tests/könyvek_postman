@@ -1,0 +1,215 @@
+{
+	"info": {
+		"_postman_id": "bcb91c36-5d37-4c29-aba8-d86e731bb03b",
+		"name": "könyvek_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49383985",
+		"_collection_link": "https://vargabence0514-309870.postman.co/workspace/Bence-Varga's-Workspace~1ac76157-b934-4da0-8410-59d5c439f1d2/collection/49383985-bcb91c36-5d37-4c29-aba8-d86e731bb03b?action=share&source=collection_link&creator=49383985"
+	},
+	"item": [
+		{
+			"name": "PostLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"bence@bence.com\",\r\n    \"password\":\"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|PGEnp3Of04UEcxwuZt8wC79Rlh9j23WAzsQmBOxmbe512378",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authors",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|PGEnp3Of04UEcxwuZt8wC79Rlh9j23WAzsQmBOxmbe512378",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/writers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"writers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NewAuthor",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|PGEnp3Of04UEcxwuZt8wC79Rlh9j23WAzsQmBOxmbe512378",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Jókai Mór\",\r\n    \"portrait_path\":\"/portraits/jókai.png\",\r\n    \"bio\":\"Magyar író, sok verse van.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/writers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"writers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditAuthor",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|PGEnp3Of04UEcxwuZt8wC79Rlh9j23WAzsQmBOxmbe512378",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Babits Mihály\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/writers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"writers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DelAuthor",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|PGEnp3Of04UEcxwuZt8wC79Rlh9j23WAzsQmBOxmbe512378",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Jókai Mór\",\r\n    \"portrait_path\":\"/portraits/jókai.png\",\r\n    \"bio\":\"Magyar író, sok verse van.\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/writers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"writers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
