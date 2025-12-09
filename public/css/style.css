@@ -1,0 +1,470 @@
+/* Alap beállítások */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+    color: #2f3640;
+}
+/* Alap stílus */
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    margin: 20px;
+    color: #2f3640;
+}
+
+h1 {
+    text-align: center;
+    color: #273c75;
+    margin-bottom: 20px;
+}
+
+/* Link */
+a {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    background: #44bd32;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+a:hover {
+    background: #4cd137;
+}
+
+/* Értesítések */
+p[style*="color:green;"] {
+    background: #dff9fb;
+    color: #2f3640 !important;
+    border: 1px solid #44bd32;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Könyv lista gridben */
+ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+li {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+li:hover {
+    transform: translateY(-5px);
+}
+
+/* Könyv címe */
+h3 {
+    margin-top: 0;
+    color: #192a56;
+}
+
+/* Kép */
+li img {
+    margin-top: 10px;
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* Fejléc */
+header {
+    background-color: #273c75;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+nav a {
+    color: #f5f6fa;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Tartalom */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Űrlapok */
+form fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #dcdde1;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #44bd32;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #4cd137;
+}
+
+/* Könyv lista */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f0f0f0;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul li img {
+    max-width: 80px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* Értesítések */
+.alert.success {
+    background-color: #dff9fb;
+    border: 1px solid #44bd32;
+    color: #2d3436;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Könyvek grid */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Egy könyv kártya */
+.book-card {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+.book-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.book-placeholder {
+    width: 100%;
+    height: 200px;
+    background: #dcdde1;
+    color: #718093;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+}
+
+.book-details {
+    padding: 15px;
+}
+
+.book-details h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #273c75;
+}
+
+.book-details p {
+    margin: 5px 0;
+}
+
+.book-details .description {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #636e72;
+}
+/* Form stílus */
+.form-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.form-card fieldset {
+    border: none;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-card label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2f3640;
+}
+
+.form-card input,
+.form-card select,
+.form-card textarea {
+    padding: 10px;
+    border: 1px solid #dcdde1;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border 0.2s;
+}
+
+.form-card input:focus,
+.form-card select:focus,
+.form-card textarea:focus {
+    border-color: #44bd32;
+    outline: none;
+}
+
+/* Gomb */
+.form-card button {
+    background: #44bd32;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.form-card button:hover {
+    background: #4cd137;
+}
+.adatok{
+    margin: 15px;
+    color: blue;
+}
+/* Könyvek listája egymás alatt */
+.book-list {
+    display: flex;
+    flex-direction: column; /* egymás alá */
+    gap: 20px;             /* távolság a kártyák között */
+    padding: 0;
+}
+
+/* Egy könyv kártya */
+.book-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    gap: 15px;             /* kép és szöveg között */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.book-card:hover {
+    transform: translateY(-3px);
+}
+
+/* Könyv kép */
+.book-image {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.book-placeholder {
+    width: 120px;
+    height: 180px;
+    background: #dcdde1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    color: #718093;
+    border-radius: 5px;
+}
+
+/* Szöveges rész */
+.book-details .adatok {
+    margin: 10px 0; /* nagyobb távolság a sorok között */
+    line-height: 1.5;
+}
+/* Írók listája egymás alatt */
+.writer-list {
+    display: flex;
+    flex-direction: column; /* egymás alá */
+    gap: 20px;             /* távolság a kártyák között */
+}
+
+/* Egy író kártya */
+.writer-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    gap: 15px;             /* kép és szöveg között */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.writer-card:hover {
+    transform: translateY(-3px);
+}
+
+/* Író kép */
+.writer-image {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.writer-placeholder {
+    width: 120px;
+    height: 180px;
+    background: #dcdde1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    color: #718093;
+    border-radius: 5px;
+}
+
+/* Szöveges rész */
+.writer-details h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #273c75;
+}
+
+.writer-details .bio {
+    margin: 8px 0;      /* nagyobb távolság a sorok között */
+    line-height: 1.5;
+}
+/* Gombok a könyv kártyán */
+.book-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.book-actions .edit-btn,
+.book-actions .delete-btn {
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.book-actions .edit-btn {
+    background-color: #273c75;
+    color: #fff;
+}
+
+.book-actions .edit-btn:hover {
+    background-color: #40739e;
+}
+
+.book-actions .delete-btn {
+    background-color: #e84118;
+    color: #fff;
+    border: none;
+}
+
+.book-actions .delete-btn:hover {
+    background-color: #c23616;
+}
+/* Gombok az író kártyán */
+.writer-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.writer-actions .edit-btn,
+.writer-actions .delete-btn {
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.writer-actions .edit-btn {
+    background-color: #273c75;
+    color: #fff;
+}
+
+.writer-actions .edit-btn:hover {
+    background-color: #40739e;
+}
+
+.writer-actions .delete-btn {
+    background-color: #e84118;
+    color: #fff;
+    border: none;
+}
+
+.writer-actions .delete-btn:hover {
+    background-color: #c23616;
+}
+
